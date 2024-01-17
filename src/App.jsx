@@ -1,6 +1,6 @@
 import { IoIosCloudyNight } from "react-icons/io";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoDiscord, IoCloudDownload  } from "react-icons/io5";
-import { IoDesktopOutline, IoEye } from "react-icons/io5";
+import { IoDesktopOutline } from "react-icons/io5";
 
 
 const projects = [
@@ -88,8 +88,8 @@ function App() {
       </article>
 
 
-      <div className="flex flex-col items-center">
-      {/* <h1 className="mb-5 text-center shadow-lg p-10 rounded-xl my-2 flex flex-col justify-between w-[50rem] text-center">
+      <div className="flex flex-col items-center pb-[90px]">
+      {/* <h1 className="mb-5 shadow-lg p-10 rounded-xl my-2 flex flex-col justify-between w-[50rem] text-center">
         Portfolio Page
       </h1> */}
 
@@ -106,11 +106,11 @@ function App() {
             />
 
             <div className="flex justify-between pt-5">
-              <a href={project.githubLink} target="_blank">
+              <a href={project.githubLink} target="_blank" rel="noreferrer">
                 <IoLogoGithub className="cursor-pointer hover:scale-125 transition-all ease-in-out text-[40px]" />
               </a>
               <h2 className="pt-2">{project.name}</h2>
-              <a href={project.liveDemoLink} target="_blank">
+              <a href={project.liveDemoLink} target="_blank" rel="noreferrer">
                 <IoDesktopOutline className="cursor-pointer hover:scale-125 transition-all ease-in-out text-[40px]" />
               </a>
             </div>
