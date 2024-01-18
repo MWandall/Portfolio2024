@@ -83,7 +83,7 @@ function App() {
       </div>
       <article className="flex justify-center mt-10">
       <div className="h-80 w-80 rounded-full bg-gradient-to-b from-emerald-500 flex justify-center">
-        <img className=" rounded-full " src="../public/Mitchell1.png" alt="picture of mitchell" />
+        <img className=" rounded-full " src="/Mitchell1.png" alt="picture of mitchell" />
       </div>
       </article>
 
