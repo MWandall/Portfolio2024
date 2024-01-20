@@ -1,5 +1,5 @@
 import { IoIosCloudyNight } from "react-icons/io";
-import { IoLogoGithub, IoLogoLinkedin, IoLogoDiscord, IoCloudDownload, IoCodeWorking  } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin, IoCloudDownload, IoCodeWorking  } from "react-icons/io5";
 import { IoDesktopOutline } from "react-icons/io5";
 import { useState } from "react";
 
@@ -58,30 +58,32 @@ function App() {
   return (
     <>
     <div className={darkMode ? "dark" : ""}>
-    <main className="bg-white px-10 dark:bg-slate-900 dark:text-white">
+    <main className="bg-slate-100 px-10 dark:bg-slate-900 dark:text-white">
       <section className="  min-h-screen"> 
       
       <nav className="py-10 mb-12 flex justify-between border-b-2 border-teal-500">
-        <div className="flex flex-col gap-7 text-4xl">
+        <div className="hidden md:block">
+        <div className="flex flex-col gap-7 text-4xl ">
         <a href="https://github.com/MWandall" target='_blank' rel="noreferrer"><IoLogoGithub className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
         <a href="https://www.linkedin.com/in/mitchell-wandall-1501222a5/" target='_blank' rel="noreferrer"><IoLogoLinkedin className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
         
         </div>
-        <ul className="flex items-center px-1 ">
+        </div>
+        <ul className="flex items-center px-1 mx-auto ">
 
           {/* <li className="pr-5 text-sm">(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. *</li> */}
-          <li onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 rounded-xl my-2 flex flex-row flex-wrap items-center h-[5rem] bg-gradient-to-r  from-emerald-500 bg-cyan-500 text-gray-900 ">
-          <p className=" text-sm">(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. *</p>
-            <IoIosCloudyNight  className="cursor-pointer text-4xl hover:scale-125 transition-all ease-in-out ml-4" />
+          <li onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 m-2 rounded-xl my-2 flex flex-row flex-wrap justify-center items-center h-[5rem] bg-gradient-to-r  from-emerald-500 bg-cyan-500 text-gray-900 ">
+          <p className=" text-sm hidden md:block">(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. *</p>
+            <IoIosCloudyNight  className="cursor-pointer text-4xl hover:scale-125 transition-all ease-in-out ml-4 " />
           
           </li>
 
           {/* <li><a className=" bg-gradient-to-r from-emerald-500 bg-cyan-500 px-4 py-2 rounded-lg ml-8 text-white " href="#">  Resume </a></li> */}
 
-          <li><a href="/MitchellWandallResume01.pdf" download="MitchellWandallResume" className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 rounded-xl my-2 h-[5rem] flex flex-row items-center bg-gradient-to-r from-emerald-500 bg-cyan-500 text-gray-900 ">
+          <li><a href="/MitchellWandallResume01.pdf" download="MitchellWandallResume" className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 rounded-xl my-2 h-[5rem] text- flex flex-row items-center bg-gradient-to-r from-emerald-500 bg-cyan-500 text-gray-900 ">
         
         <p className="font-bold">Download Resume</p>
-           <IoCloudDownload className="text-4xl ml-4 "/>
+           <IoCloudDownload className="text-4xl md:ml-4 "/>
        
         
         
@@ -142,7 +144,8 @@ function App() {
 
 
       </section>
-      <footer className=' sticky bottom-0  py-5 px-10 bg-gradient-to-r  from-emerald-500 bg-cyan-500 shadow-lg rounded-3xl text-slate-900'>
+      <footer className='bgBlur sticky bottom-0  py-5 px-10 
+      border-emerald-700 border-4 dark:text-white shadow-lg rounded-3xl text-slate-900'>
         <div className='flex flex-row justify-between gap-5 text-[30px]'>
         <a href="https://github.com/MWandall" target='_blank' rel="noreferrer"><IoLogoGithub className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
         <a href="https://www.linkedin.com/in/mitchell-wandall-1501222a5/" target='_blank' rel="noreferrer"><IoLogoLinkedin className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
