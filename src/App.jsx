@@ -97,7 +97,7 @@ function App() {
       
       <div className="md:flex justify-evenly ">
       <div className="text-center flex flex-col justify-center ">
-        <h2 className="text-4xl py-2 text-teal-600 font-bold md:text-5xl">Mitchell Wandall</h2>
+        <h2 className="text-4xl py-2 text-teal-600 font-bold md:text-7xl">Mitchell Wandall</h2>
         <h3 className="text-xl font-semibold md:text-2xl">Full Stack Developer</h3>
         <p className="text-lg py-5 leading-8 max-w-xl mx-auto md:text-xl">Freelance Developer for all of your programming and designing needs. Let's collaborate to bring your ideas to life with precision and creativity!</p>
       </div>
@@ -109,7 +109,7 @@ function App() {
       </div>
 
       <section>
-        <h1 className="text-4xl font-bold text-center p-5 md:text-left">Services:</h1>
+        <h1 className="text-5xl font-bold text-center p-5 md:text-left">Services:</h1>
         <div className="flex flex-col py-5 md:flex-row">
           <div className="flex flex-col px-10">
           <h3 className=" text-2xl font-bold">Web Design:</h3>
