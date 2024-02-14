@@ -1,5 +1,5 @@
 import { IoIosCloudyNight } from "react-icons/io";
-import { IoLogoGithub, IoLogoLinkedin, IoCloudDownload, IoCodeWorking  } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin, IoCloudDownload, IoCodeWorking, IoMailOutline  } from "react-icons/io5";
 import { IoDesktopOutline } from "react-icons/io5";
 import { useState } from "react";
 
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: "E-Commerce Backend",
-    text: "SQL back end for a shop.",
+    text: "SQL back end for e-commerce.",
     image: "/E-commerceBackend.png",
     githubLink: "https://github.com/MWandall/e-commerceBackEnd",
     liveDemoLink: "https://drive.google.com/file/d/1Jmo46EbtmVVWI_YGmUcayLBgoncXWbpu/view",
@@ -83,7 +83,7 @@ function App() {
 
           <li><a href="/MitchellWandallResume01.pdf" download="MitchellWandallResume" className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 rounded-xl my-2 h-[5rem] text- flex flex-row items-center bg-gradient-to-r from-emerald-500 bg-cyan-500 text-gray-900 ">
         
-        <p className="font-bold">Download Resume</p>
+        <p className="font-bold"><span></span>Download Resume</p>
            <IoCloudDownload className="text-4xl md:ml-4 "/>
        
         
@@ -177,7 +177,7 @@ function App() {
         <div className='flex flex-row justify-between gap-5 text-[30px]'>
         <a href="https://github.com/MWandall" target='_blank' rel="noreferrer"><IoLogoGithub className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
         <a href="https://www.linkedin.com/in/mitchell-wandall-1501222a5/" target='_blank' rel="noreferrer"><IoLogoLinkedin className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
-        <p><IoCodeWorking  className=' cursor-pointer hover:scale-125 transition-all ease-in-out'/></p>
+        <a href="mailto:mitchellwandall01@gmail.com"><IoMailOutline  className=' cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
         </div>
         </footer>
     </main>
