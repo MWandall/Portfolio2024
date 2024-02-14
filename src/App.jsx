@@ -58,10 +58,10 @@ function App() {
   return (
     <>
     <div className={darkMode ? "dark" : ""}>
-    <main className="bg-slate-100 px-10 dark:bg-slate-900 dark:text-white">
+    <main className="bg-slate-300 px-10 dark:bg-slate-900 dark:text-white">
       <section className="  min-h-screen"> 
       
-      <nav className="py-10 mb-12 flex justify-between border-b-2 border-teal-500">
+      <nav className="py-10 mb-12 flex justify-between border-b-2 border-teal-500 ">
         <div className="hidden md:block">
         <div className="flex flex-col gap-7 text-4xl ">
         <a href="https://github.com/MWandall" target='_blank' rel="noreferrer"><IoLogoGithub className='  cursor-pointer hover:scale-125 transition-all ease-in-out'/></a>
@@ -69,7 +69,8 @@ function App() {
         
         </div>
         </div>
-        <ul className="flex items-center px-1 mx-auto ">
+        <div>
+        <ul className="flex items-center px-1 mx-auto">
 
           {/* <li className="pr-5 text-sm">(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. *</li> */}
           <li onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 m-2 rounded-xl my-2 flex flex-row flex-wrap justify-center items-center h-[5rem] bg-gradient-to-r  from-emerald-500 bg-cyan-500 text-gray-900 ">
@@ -90,19 +91,40 @@ function App() {
         
         </a></li>
         </ul>
+        </div>
       
       </nav>
       
-      <div className="text-center">
+      <div className="md:flex justify-evenly ">
+      <div className="text-center flex flex-col justify-center ">
         <h2 className="text-4xl py-2 text-teal-600 font-bold md:text-5xl">Mitchell Wandall</h2>
         <h3 className="text-xl font-semibold md:text-2xl">Full Stack Developer</h3>
         <p className="text-lg py-5 leading-8 max-w-xl mx-auto md:text-xl">Freelance Developer for all of your programming and designing needs. Let's collaborate to bring your ideas to life with precision and creativity!</p>
       </div>
-      <article className="flex justify-center mt-10">
+      <article className="flex justify-center mt-10 border-2 border-teal-500 rounded-full p-5 ">
       <div className="h-80 w-80 rounded-full bg-gradient-to-b from-emerald-500 flex justify-center md:h-96 md:w-96">
         <img className=" rounded-full " src="/Mitchell1.png" alt="picture of mitchell" />
       </div>
       </article>
+      </div>
+
+      <section>
+        <h1 className="text-4xl font-bold text-center p-5 md:text-left">Services:</h1>
+        <div className="flex flex-col py-5 md:flex-row">
+          <div className="flex flex-col px-10">
+          <h3 className=" text-2xl">Web Design:</h3>
+          <p className="py-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum, et asperiores hic mollitia enim ipsam autem quaerat nesciunt eius, voluptatum ut quo ducimus dolor omnis aliquam fugiat consequuntur. Mollitia.</p>
+          </div>
+          <div className="flex flex-col px-10">
+          <h3 className=" text-2xl">title:</h3>
+          <p className="py-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum, et asperiores hic mollitia enim ipsam autem quaerat nesciunt eius, voluptatum ut quo ducimus dolor omnis aliquam fugiat consequuntur. Mollitia.</p>
+          </div>
+          <div className="flex flex-col px-10">
+          <h3 className=" text-2xl">title:</h3>
+          <p className="py-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum, et asperiores hic mollitia enim ipsam autem quaerat nesciunt eius, voluptatum ut quo ducimus dolor omnis aliquam fugiat consequuntur. Mollitia.</p>
+          </div>
+        </div>
+      </section>
 
 
       <div className="flex flex-col items-center pb-[90px] ">
@@ -110,11 +132,11 @@ function App() {
         Portfolio Page
       </h1> */}
 
-      <div className="flex justify-center flex-wrap md:mx-20 bg-slate-200 rounded-xl dark:bg-slate-600">
+      <div className="flex justify-center flex-wrap md:mx-20 bg-slate-200 rounded-xl  dark:bg-slate-600 ">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="md:basis-1/2 md:px-10 shadow-lg p-10 rounded-xl my-2 flex flex-col justify-between text-center font-bold"
+            className="md:basis-1/2 md:px-10 shadow-lg p-10 rounded-xl my-2 flex flex-col justify-between text-center font-bold border-2 border-teal-700"
           >
             <img
               className="object-cover h-80 "
@@ -144,6 +166,12 @@ function App() {
 
 
       </section>
+
+      <div className="pb-5">
+        <h3 className="text-2xl">Mitchell Wandall</h3>
+        <h4 className="text-xl"><a href="mailto:mitchellwandall01@gmail.com" className="cursor-pointer hover:text-blue-500">mitchellwandall01@gmail.com</a></h4>
+      </div>
+
       <footer className='bgBlur sticky bottom-0  py-5 px-10 
       border-emerald-700 border-4 dark:text-white shadow-lg rounded-3xl text-slate-900'>
         <div className='flex flex-row justify-between gap-5 text-[30px]'>
