@@ -97,7 +97,7 @@ function App() {
       
       <div className="md:flex justify-evenly ">
       <div className="text-center flex flex-col justify-center ">
-        <h2 className="text-4xl py-2 text-teal-600 font-bold md:text-7xl">Mitchell Wandall</h2>
+        <h2 className="text-4xl py-2 text-teal-600 font-bold md:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">Mitchell Wandall</h2>
         <h3 className="text-xl font-semibold md:text-2xl">Full Stack Developer</h3>
         <p className="text-lg py-5 leading-8 max-w-xl mx-auto md:text-xl">Freelance Developer for all of your programming and designing needs. Let's collaborate to bring your ideas to life with precision and creativity!</p>
       </div>
