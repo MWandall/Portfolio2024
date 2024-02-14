@@ -112,16 +112,16 @@ function App() {
         <h1 className="text-4xl font-bold text-center p-5 md:text-left">Services:</h1>
         <div className="flex flex-col py-5 md:flex-row">
           <div className="flex flex-col px-10">
-          <h3 className=" text-2xl">Web Design:</h3>
-          <p className="py-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum, et asperiores hic mollitia enim ipsam autem quaerat nesciunt eius, voluptatum ut quo ducimus dolor omnis aliquam fugiat consequuntur. Mollitia.</p>
+          <h3 className=" text-2xl font-bold">Web Design:</h3>
+          <p className="py-5">I specialize in creating tailor-made websites from scratch, ensuring they perfectly align with your brand identity and business goals. Through intuitive user interfaces, I ensure that every aspect of your website is meticulously crafted to provide an exceptional user experience.</p>
           </div>
           <div className="flex flex-col px-10">
-          <h3 className=" text-2xl">title:</h3>
-          <p className="py-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum, et asperiores hic mollitia enim ipsam autem quaerat nesciunt eius, voluptatum ut quo ducimus dolor omnis aliquam fugiat consequuntur. Mollitia.</p>
+          <h3 className=" text-2xl font-bold">Website Maintenance and Support:</h3>
+          <p className="py-5">Providing ongoing maintenance and support services to ensure that your website or web application remains secure, up-to-date, and optimized for performance. Whether it's fixing bugs, implementing new features, or performing regular updates, I offer comprehensive support to keep your online presence running smoothly and your visitors engaged.</p>
           </div>
           <div className="flex flex-col px-10">
-          <h3 className=" text-2xl">title:</h3>
-          <p className="py-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum, et asperiores hic mollitia enim ipsam autem quaerat nesciunt eius, voluptatum ut quo ducimus dolor omnis aliquam fugiat consequuntur. Mollitia.</p>
+          <h3 className=" text-2xl font-bold">Back-end Development:</h3>
+          <p className="py-5">Leveraging my expertise in back-end technologies such as Node.js, MongoDB/Atlas, or SQL, I develop robust server-side architectures and database solutions to power your web applications. From user authentication and data storage to API integrations and performance optimization, I ensure that your back-end infrastructure is secure, efficient, and scalable.</p>
           </div>
         </div>
       </section>
