@@ -83,7 +83,7 @@ function App() {
 
           <li><a href="/MitchellWandallResume01.pdf" download="MitchellWandallResume" className="cursor-pointer hover:scale-125 transition-all ease-in-out shadow-lg p-3 rounded-xl my-2 h-[5rem] text- flex flex-row items-center bg-gradient-to-r from-emerald-500 bg-cyan-500 text-gray-900 ">
         
-        <p className="font-bold"><span></span>Download Resume</p>
+        <p className="font-bold">Download Resume</p>
            <IoCloudDownload className="text-4xl md:ml-4 "/>
        
         
@@ -101,32 +101,47 @@ function App() {
         <h3 className="text-xl font-semibold md:text-2xl">Full Stack Developer</h3>
         <p className="text-lg py-5 leading-8 max-w-xl mx-auto md:text-xl">Freelance Developer for all of your programming and designing needs. Let's collaborate to bring your ideas to life with precision and creativity!</p>
       </div>
-      <article className="flex justify-center mt-10 border-2 border-teal-500 rounded-full p-5 ">
+      <article className="flex justify-center mt-10 border-2 border-teal-600 rounded-full p-5 ">
       <div className="h-80 w-80 rounded-full bg-gradient-to-b from-emerald-500 flex justify-center md:h-96 md:w-96">
         <img className=" rounded-full " src="/Mitchell1.png" alt="picture of mitchell" />
       </div>
       </article>
       </div>
 
-      <section>
-        <h1 className="text-5xl font-bold text-center p-5 md:text-left">Services:</h1>
+      <section className=" ">
+        <h1 className="text-5xl font-bold text-center py-20 px-5  md:text-left md:mx-20">Services:</h1>
+        
         <div className="flex flex-col py-5 md:flex-row">
           <div className="flex flex-col px-10">
-          <h3 className=" text-2xl font-bold">Web Design:</h3>
-          <p className="py-5">I specialize in creating tailor-made websites from scratch, ensuring they perfectly align with your brand identity and business goals. Through intuitive user interfaces, I ensure that every aspect of your website is meticulously crafted to provide an exceptional user experience.</p>
+
+            <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 md:flex-row">
+          <h3 className=" text-2xl font-bold text-center">Web Design:</h3>
+          <img className="h-32 w-32 mx-11 my-5" src="./color-palette_11096498.png" alt="color-palette" />
+          </div>
+
+          <p className="py-5 px-1 mb-28 md:border-r-2 border-teal-600 text-center md:pr-7">I specialize in creating tailor-made websites from scratch, ensuring they perfectly align with your brand identity and business goals. Through intuitive user interfaces, I ensure that every aspect of your website is meticulously crafted to provide an exceptional user experience.</p>
           </div>
           <div className="flex flex-col px-10">
-          <h3 className=" text-2xl font-bold">Website Maintenance and Support:</h3>
-          <p className="py-5">Providing ongoing maintenance and support services to ensure that your website or web application remains secure, up-to-date, and optimized for performance. Whether it's fixing bugs, implementing new features, or performing regular updates, I offer comprehensive support to keep your online presence running smoothly and your visitors engaged.</p>
+
+          <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 md:flex-row">
+          <h3 className=" text-2xl font-bold text-center">Website Maintenance and Support:</h3>
+          <img className="h-32 w-32 mx-11 my-5" src="pencil-case_11096713.png" alt="tool-bag" />
+          </div>
+          <p className="py-5 px-1 mb-28 md:border-r-2 border-teal-600 text-center md:pr-7">Providing ongoing maintenance and support services to ensure that your website or web application remains secure, up-to-date, and optimized for performance. Whether it's fixing bugs, implementing new features, or performing regular updates, I offer comprehensive support to keep your online presence running smoothly and your visitors engaged.</p>
           </div>
           <div className="flex flex-col px-10">
-          <h3 className=" text-2xl font-bold">Back-end Development:</h3>
-          <p className="py-5">Leveraging my expertise in back-end technologies such as Node.js, MongoDB/Atlas, or SQL, I develop robust server-side architectures and database solutions to power your web applications. From user authentication and data storage to API integrations and performance optimization, I ensure that your back-end infrastructure is secure, efficient, and scalable.</p>
+
+          <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 md:flex-row">
+          <h3 className=" text-2xl font-bold text-center">Back-end Development:</h3>
+          <img className="h-32 w-32 mx-11 my-5 " src="alignment_11096605.png" alt="computer-server" />
+          </div>
+
+          <p className="py-5 px-1 mb-11 md:border-r-2 border-teal-600 text-center md:pr-7">Leveraging my expertise in back-end technologies such as Node.js, MongoDB/Atlas, or SQL, I develop robust server-side architectures and database solutions to power your web applications. From user authentication and data storage to API integrations and performance optimization, I ensure that your back-end infrastructure is secure, efficient, and scalable.</p>
           </div>
         </div>
       </section>
 
-
+      <h1 className="text-5xl font-bold text-center py-20 px-5 md:text-left md:mx-20">Projects:</h1>
       <div className="flex flex-col items-center pb-[90px] ">
       {/* <h1 className="mb-5 shadow-lg p-10 rounded-xl my-2 flex flex-col justify-between w-[50rem] text-center">
         Portfolio Page
@@ -145,18 +160,23 @@ function App() {
             />
 
             <div className="flex justify-between pt-5">
+            <div className="flex flex-col items-center">
               <a href={project.githubLink} target="_blank" rel="noreferrer">
                 <IoLogoGithub className="cursor-pointer hover:scale-125 transition-all ease-in-out text-[40px]" />
               </a>
-
+              <p>GitHub</p>
+              </div>
               <div>
               <h2 className="pt-2 text-2xl">{project.name}</h2>
               <p className="text-small text-gray-600 dark:text-white">{project.text}</p>
               </div>
 
+              <div className="flex flex-col items-center">
               <a href={project.liveDemoLink} target="_blank" rel="noreferrer">
                 <IoDesktopOutline className="cursor-pointer hover:scale-125 transition-all ease-in-out text-[40px]" />
               </a>
+              <p>Demo</p>
+              </div>
             </div>
           </div>
         ))}
