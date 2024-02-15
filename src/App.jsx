@@ -111,10 +111,10 @@ function App() {
       <section className=" ">
         <h1 className="text-5xl font-bold text-center py-20 px-5  md:text-left md:mx-20">Services:</h1>
         
-        <div className="flex flex-col py-5 md:flex-row">
+        <div className="flex flex-col py-5 lg:flex-row">
           <div className="flex flex-col px-10">
 
-            <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 md:flex-row">
+            <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 xl:flex-row">
           <h3 className=" text-2xl font-bold text-center">Web Design:</h3>
           <img className="h-32 w-32 mx-11 my-5" src="./color-palette_11096498.png" alt="color-palette" />
           </div>
@@ -123,7 +123,7 @@ function App() {
           </div>
           <div className="flex flex-col px-10">
 
-          <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 md:flex-row">
+          <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 xl:flex-row">
           <h3 className=" text-2xl font-bold text-center">Website Maintenance and Support:</h3>
           <img className="h-32 w-32 mx-11 my-5" src="pencil-case_11096713.png" alt="tool-bag" />
           </div>
@@ -131,7 +131,7 @@ function App() {
           </div>
           <div className="flex flex-col px-10">
 
-          <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 md:flex-row">
+          <div className="flex flex-col items-center justify-between md:border-r-2 border-teal-600 xl:flex-row">
           <h3 className=" text-2xl font-bold text-center">Back-end Development:</h3>
           <img className="h-32 w-32 mx-11 my-5 " src="alignment_11096605.png" alt="computer-server" />
           </div>
