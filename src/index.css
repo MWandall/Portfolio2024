@@ -6,12 +6,72 @@
 div.darkMode {
   background-color: #333333;
   color: #ffffff;
+
 }
+/* .dark .neon {
+  color: #fff;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #bc13fe,
+  0 0 0.8rem #bc13fe,
+  0 0 2.8rem #bc13fe,
+  inset 0 0 1.3rem #bc13fe;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+} */
 
 .bgBlur {
   background: transparent;
   backdrop-filter: blur(50px);
   /* border: 3px solid black; */
+}
+
+/* annoying neon stuff below. cant comment it out so backspaced "utilities" */
+
+@layer util {
+
+.neon {
+  /* color: #fff; */
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #bc13fe,
+  0 0 0.8rem #bc13fe,
+  0 0 2.8rem #bc13fe,
+  inset 0 0 1.3rem #bc13fe;
+  
+  /* text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa; */
+
+}
+.neon2 {
+  /* color: #fff; */
+  border-radius: 9999px;
+  padding: 1rem;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #bc13fe,
+  0 0 0.8rem #bc13fe,
+  0 0 2.8rem #bc13fe,
+  inset 0 0 1.3rem #bc13fe;
+}
+
+
 }
 
 /* :root {
